@@ -1,6 +1,6 @@
 import React from "react";
 
-function SunIconComponent(props) {
+function Icon(props) {
   const alignMentType = props.align;
 
   return (
@@ -17,4 +17,4 @@ function SunIconComponent(props) {
   );
 }
 
-export default SunIconComponent;
+export default Icon;
