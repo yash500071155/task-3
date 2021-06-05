@@ -1,23 +1,21 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import CitySelector from "./Components/CitySelector";
-import SunIconComponent from "./Components/SunIconComponent";
-import WeatherViewer from "./Components/WeatherViewer";
-import { CityName } from "./redux/weather/WeatherSlice";
+import CitySelection from "./Component/CitySelection";
+import Icon from "./Component/Icon";
+import WeatherView from "./Component/WeatherView";
+import { CityName } from "./redux/Weather/Slice";
 
 function App() {
-  const city = useSelector(CityName);
-
-  return (
-    <div
-      className='d-flex flex-column min-vh-100 p-5'
-      style={{ backgroundColor: "orange" }}
-    >
-      <SunIconComponent align='left' />
-      {city ? <WeatherViewer city={city} /> : <CitySelector />}
-      <SunIconComponent align='right' />
-    </div>
-  );
+      Const City = useSelector(CityName);
+      return (
+         <div
+            ClassName = 'd-flex flex-column min-vh-100 p-5'
+            style= {{ backgroundColour: "black" }}
+          >
+            <Icon align='left' />
+              {city ? <WeatherView city={city} /> : <CitySelection/>}
+              <Icon align='right' />
+                </div>
+              );
 }
-
 export default App;
