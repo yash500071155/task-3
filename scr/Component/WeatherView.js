@@ -6,9 +6,9 @@ import {
   Loading,
   SET_CITY,
   WeatherData,
-} from "../redux/weather/WeatherSlice";
+} from "../redux/weather/Slice";
 
-function WeatherViewer({ city }) {
+function WeatherView({ city }) {
   //GETTING FROM REDUX
   const dispatch = useDispatch();
   const loading = useSelector(Loading);
@@ -60,4 +60,4 @@ function WeatherViewer({ city }) {
   );
 }
 
-export default WeatherViewer;
+export default WeatherView;
