@@ -2,9 +2,9 @@ import { Button } from "react-bootstrap";
 import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import { useDispatch } from "react-redux";
-import { SET_CITY } from "../redux/weather/WeatherSlice";
+import { SET_CITY } from "../redux/weather/Slice";
 
-function CitySelector() {
+function CitySelection() {
   //STATES
   const [show, setShow] = useState(false);
   const [cityName, setCityName] = useState("");
